@@ -9,6 +9,9 @@ function onCalcBMIButtonClick() {
   let bmiResult = document.getElementById("bmiResult");
   bmiResult.textContent = bmi;
 
+  let advice = bmiobj.getAdvice();
+  let adviceMessage = document.getElementById("adviceMessage");
+  adviceMessage.textContent = advice;
   let resultMessage = document.getElementById("resultMessage");
   resultMessage.classList.remove("displayNone");
 }
